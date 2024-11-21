@@ -66,14 +66,12 @@ public class Running {
 
         String score_string =Integer.toString(score_p);
 
-        try {
-
-            BufferedWriter writer =new BufferedWriter(new FileWriter ("src/Exercise_3_Nivel1/name_score.txt"));
+        try ( BufferedWriter writer =new BufferedWriter(new FileWriter ("src/Exercise_3_Nivel1/name_score.txt"))){
 
             writer.write(name_user_p+", su puntuación es: "+score_string);
             writer.newLine();
 
-            writer.close();
+
 
         }
 
@@ -86,9 +84,7 @@ public class Running {
 
     private static void leer_archivo (HashMap<String,String>paises_capitales_p){
 
-        try{
-
-            BufferedReader lector=new BufferedReader(new FileReader("src/Exercise_3_Nivel1/countries.txt"));
+        try(BufferedReader lector=new BufferedReader(new FileReader("src/Exercise_3_Nivel1/countries.txt"))){
 
             String linea="";
 

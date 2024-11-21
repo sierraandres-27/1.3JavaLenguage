@@ -17,14 +17,14 @@ public class Running {
         Months.add(new Month("May"));
         Months.add(new Month("June"));
         Months.add(new Month("July"));
-        Months.add(new Month("Empty month"));
+
         Months.add(new Month("September"));
         Months.add(new Month("October"));
         Months.add(new Month("November"));
         Months.add(new Month("December"));
         Months.add(new Month("December"));
 
-        Months.set(7,new Month("August"));
+        Months.add(7,new Month("August"));
 
 
 
